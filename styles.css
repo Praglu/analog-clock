@@ -1,0 +1,119 @@
+.clock-container {
+    margin-left: 500px;
+    margin-top: 90px;
+    width: 500px;
+    height: 500px;
+    border: 5px solid black;
+    border-radius: 50%;
+    position: relative;
+}
+
+.clock {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.face {
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    background-color: white;
+    position: relative;
+}
+
+.hand {
+    transform-origin: center bottom; /* Set rotation origin to the bottom center of the hands */
+    transform: translateY(-50%); /* Adjust vertical position to center the hands */
+}
+
+.hour-hand {
+    width: 6px;
+    height: 35%;
+    background-color: black;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform-origin: bottom center;
+    transform: translateY(-50%) rotate(90deg); /* Rotate by 90 degrees to align it with the hour position */
+}
+
+.minute-hand {
+    width: 4px;
+    height: 45%;
+    background-color: black;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform-origin: bottom center;
+    transform: translateY(-50%) rotate(90deg); /* Rotate by 90 degrees to align it with the minute position */
+}
+
+.second-hand {
+    width: 2px;
+    height: 48%;
+    background-color: red; /* Change color for visibility */
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform-origin: bottom center;
+    transform: translateY(-50%) rotate(90deg); /* Rotate by 90 degrees to align it with the second position */
+}
+
+.center-circle {
+    width: 12px;
+    height: 12px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.date-display {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #def123;
+}
+
+.twelve-oclock {
+    position: absolute;
+    left: 44%;
+    top: -10%;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.six-oclock {
+    position: absolute;
+    left: 47%;
+    top: 98%;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.three-oclock {
+    position: absolute;
+    left: 103%;
+    top: 44%;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.nine-oclock {
+    position: absolute;
+    left: -5%;
+    top: 44%;
+    font-size: 40px;
+    font-weight: bold;
+}
